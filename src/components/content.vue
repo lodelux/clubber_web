@@ -27,7 +27,7 @@ export default {
   data() {
     return {
       // UTC Epoch time in MILLISECONDS
-      toDate: 1636914500000
+      toDate: 1639506500000
     }
   }
 };

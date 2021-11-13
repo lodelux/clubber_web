@@ -1,9 +1,48 @@
 <template>
-  <span class="card">01d 23h 45m</span>
+  <span class="card">
+    <h3 class="w-full">
+      {{ this.timeLeft.Days }}d {{ this.timeLeft.Hours }}h
+      {{ this.timeLeft.Minutes }}m {{ this.timeLeft.Seconds }}s
+    </h3></span
+  >
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    toDate: {
+      type: Number,
+      required: true,
+    },
+  },
+  data() {
+    return {
+      timeLeft: {
+        Date: "",
+        Days: "",
+        Hours: "",
+        Minutes: "",
+        Seconds: "",
+      },
+    };
+  },
+  methods: {
+    //every second calculate remaining time
+    countdown() {
+      setInterval(() => {
+        this.timeLeft = new Date(this.toDate - Math.floor(Date.now()));
+        let seconds = Math.floor(this.timeLeft.getTime() / 1000);
+        this.timeLeft.Seconds = seconds % 60;
+        this.timeLeft.Minutes = Math.floor(seconds / 60) % 60;
+        this.timeLeft.Hours = Math.floor(seconds / 60 / 60) % 24;
+        this.timeLeft.Days = Math.floor(seconds / 60 / 60 / 24);
+      }, 1000);
+    },
+  },
+  created() {
+    this.countdown();
+  },
+};
 </script>
 
 <style>

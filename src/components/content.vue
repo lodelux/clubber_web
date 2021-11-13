@@ -6,7 +6,7 @@
       <p class="logo">er</p>
     </div>
     <div class="caption">Alla pubblicazione</div>
-    <Timer></Timer>
+    <Timer :toDate="this.toDate"></Timer>
   </div>
   <div class="hero">
     <p class="info">
@@ -24,6 +24,12 @@ export default {
   components: {
     Timer,
   },
+  data() {
+    return {
+      // UTC Epoch time in MILLISECONDS
+      toDate: 1636914500000
+    }
+  }
 };
 </script>
 

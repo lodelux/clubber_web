@@ -10,15 +10,10 @@ export default {};
 
 <style>
 .navlink {
-  @apply hover:bg-gray-600 hover:bg-opacity-50;
-  height: max-content;
-  margin-top: 31px;
-  margin-bottom: 31px;
-  margin-left: 66px;
-  padding: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
+  @apply hover:bg-gray-600 cursor-pointer py-2 px-4;
   border-radius: 10px;
+
+  height: max-content;
 
   text-align: left;
   font: normal normal 600 20px/21px Nunito;

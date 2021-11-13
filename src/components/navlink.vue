@@ -1,7 +1,7 @@
 <template>
-  <div class="navlink ">
+  <button class="navlink ">
     <slot></slot>
-  </div>
+  </button>
 </template>
 
 <script>

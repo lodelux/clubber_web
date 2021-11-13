@@ -1,5 +1,5 @@
 <template>
-  <div class="card">01d 23h 45m</div>
+  <span class="card">01d 23h 45m</span>
 </template>
 
 <script>
@@ -8,7 +8,7 @@ export default {};
 
 <style>
 .card {
-  @apply px-20 py-3;
+  @apply px-20 py-3 text-center;
   font: normal normal bold 20px/21px Nunito;
   letter-spacing: 0.3px;
   color: #ffffff;

@@ -20,7 +20,7 @@
           <h3>clubber</h3>
         </h2>
       </div>
-      <div class="border-r border-white text-white w-full pt-5 pl-11">
+      <div class=" text-white w-full pt-5 pl-11">
         <h1>Contatti</h1>
       </div>
     </div>

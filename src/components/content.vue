@@ -1,12 +1,15 @@
 <template>
-  <div class="splash">
-    <div class="flex flex-row">
-      <p class="logo">Clu</p>
-      <p class="a logo">bb</p>
-      <p class="logo">er</p>
+  <div class="wrapper relative">
+    <div class="absolute w-full h-full bgimg "></div>
+    <div class="splash  relative">
+      <div class="flex flex-row">
+        <p class="logo opacity-1">Clu</p>
+        <p class="a logo">bb</p>
+        <p class="logo">er</p>
+      </div>
+      <div class="caption">Alla pubblicazione</div>
+      <Timer :toDate="this.toDate"></Timer>
     </div>
-    <div class="caption">Alla pubblicazione</div>
-    <Timer :toDate="this.toDate"></Timer>
   </div>
   <div class="hero">
     <p class="info">
@@ -97,11 +100,14 @@ export default {
   letter-spacing: 0.36px;
   color: #ffffff;
 }
-.splash {
-  @apply w-full  flex flex-col justify-center items-center space-y-10;
-  background: transparent url("../assets/background.png") no-repeat  ;  
+.bgimg {
+  background: transparent url("../assets/background.png") no-repeat;
   background-size: 1920px;
   background-position: 50%;
+  opacity: 0.7;
+}
+.splash {
+  @apply w-full  flex flex-col justify-center items-center space-y-10;
   min-height: 1080px;
 }
 
@@ -112,7 +118,7 @@ export default {
   color: #ffff;
 }
 .a {
-  opacity:1;
+  opacity: 1;
   color: #ea0053;
 }
 

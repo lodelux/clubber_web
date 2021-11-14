@@ -107,7 +107,7 @@ export default {
   background: transparent url("../assets/background.png") no-repeat;
   background-size: 1920px;
   background-position: 50%;
-  opacity: 0.7;
+  opacity: 1;
 }
 .splash {
   @apply w-full  flex flex-col justify-center items-center space-y-10;

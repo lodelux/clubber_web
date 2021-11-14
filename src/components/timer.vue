@@ -1,8 +1,8 @@
 <template>
   <span class="card">
     <h3 class="w-full">
-      {{ this.timeLeft.Days }}d {{ this.timeLeft.Hours }}h
-      {{ this.timeLeft.Minutes }}m {{ this.timeLeft.Seconds }}s
+      {{ this.timeLeft.Days.padStart(2,'0') }}d {{ this.timeLeft.Hours.padStart(2,'0') }}h
+      {{ this.timeLeft.Minutes.padStart(2,'0') }}m {{ this.timeLeft.Seconds.padStart(2,'0') }}s
     </h3></span
   >
 </template>
@@ -32,10 +32,10 @@ export default {
       setInterval(() => {
         this.timeLeft = new Date(this.toDate - Math.floor(Date.now()));
         let seconds = Math.floor(this.timeLeft.getTime() / 1000);
-        this.timeLeft.Seconds = seconds % 60;
-        this.timeLeft.Minutes = Math.floor(seconds / 60) % 60;
-        this.timeLeft.Hours = Math.floor(seconds / 60 / 60) % 24;
-        this.timeLeft.Days = Math.floor(seconds / 60 / 60 / 24);
+        this.timeLeft.Seconds = (seconds % 60).toString();
+        this.timeLeft.Minutes = (Math.floor(seconds / 60) % 60).toString();
+        this.timeLeft.Hours = (Math.floor(seconds / 60 / 60) % 24).toString();
+        this.timeLeft.Days = Math.floor(seconds / 60 / 60 / 24).toString();
       }, 1000);
     },
   },
@@ -52,7 +52,6 @@ export default {
   letter-spacing: 0.3px;
   color: #ffffff;
   opacity: 1;
-  background: var(---ea0053) 0% 0% no-repeat padding-box;
   background: #ea0053 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
   border-radius: 10px;

@@ -23,9 +23,12 @@
     <div
       class="
         flex
+        flex-col
+        content-center
+        lg:flex-row
         justify-center
         space-y-12
-        sm:space-y-0 sm:space-x-16
+        lg:space-y-0 lg:space-x-16
         w-full
         flex-wrap
         mt-12

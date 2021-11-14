@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <div class="splash">
     <div class="flex flex-row">
       <p class="logo">Clu</p>
       <p class="a logo">bb</p>
@@ -15,27 +15,66 @@
     </p>
     <button class="us">Chi Siamo</button>
   </div>
-  <div class="how"><p class="mt-12">Come funzia sfunzia</p></div>
+  <div class="how">
+    <p class="mt-12">Come funziona</p>
+    <div
+      class="
+        flex
+        justify-center
+        space-y-12
+        sm:space-y-0 sm:space-x-16
+        w-full
+        flex-wrap
+        mt-12
+      "
+    >
+      <card v-for="(card, i) in this.cards" :key="i" :card="card"></card>
+    </div>
+  </div>
 </template>
 
 <script>
 import Timer from "@/components/timer.vue";
+import Card from "@/components/card.vue";
 export default {
   components: {
     Timer,
+    Card,
   },
   data() {
     return {
       // UTC Epoch time in MILLISECONDS
-      toDate: 1639506500000
-    }
-  }
+      toDate: 1639506500000,
+      cards: [
+        {
+          img: "Trova.svg",
+          title1: "Trova",
+          title2: "la serata per te",
+          subtitle1:
+            "Scegli fra le serate disponibili usando i filtri per trovare la tua serata",
+        },
+        {
+          img: "Personalizza.svg",
+          title1: "Personalizza",
+          title2: "la tua prenotazione",
+          subtitle1:
+            "Aggiungi alla prenotazione drink,bottiglie,tavoli,offerte e molto altro",
+        },
+        {
+          img: "Paga.svg",
+          title1: "Paga",
+          title2: "direttamente dall'app",
+          subtitle1: "Paga direttamente dall'app in sicurezza e senza sbatti",
+        },
+      ],
+    };
+  },
 };
 </script>
 
-<style>
+<style scoped>
 .how {
-  @apply w-full h-96 text-center;
+  @apply w-full pb-12 text-center;
   font: normal normal bold 36px/21px Nunito;
   letter-spacing: 0.54px;
   color: #171424;
@@ -58,17 +97,22 @@ export default {
   letter-spacing: 0.36px;
   color: #ffffff;
 }
-.content {
-  @apply w-full bg-gray-900 flex flex-col justify-center items-center space-y-10;
-  min-height: 450px;
+.splash {
+  @apply w-full  flex flex-col justify-center items-center space-y-10;
+  background: transparent url("../assets/background.png") no-repeat  ;  
+  background-size: 1920px;
+  background-position: 50%;
+  min-height: 1080px;
 }
 
 .logo {
   font: normal normal bold 79.5px/108.5px Nunito;
   letter-spacing: 0px;
+  opacity: 1;
   color: #ffff;
 }
 .a {
+  opacity:1;
   color: #ea0053;
 }
 

@@ -45,7 +45,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .card {
   @apply px-20 py-3 text-center;
   font: normal normal bold 20px/21px Nunito;

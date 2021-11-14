@@ -8,7 +8,7 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
 .navlink {
   @apply hover:bg-gray-600 cursor-pointer py-2 px-4;
   border-radius: 10px;

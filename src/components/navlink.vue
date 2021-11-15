@@ -1,5 +1,5 @@
 <template>
-  <button class="navlink ">
+  <button class="navlink">
     <slot></slot>
   </button>
 </template>
@@ -16,8 +16,8 @@ export default {};
   height: max-content;
 
   text-align: left;
-  font: normal normal 600 20px/21px Nunito;
-  letter-spacing: 0.3px;
+  font: normal normal 600  2.96vh Nunito;
+  letter-spacing: 0.24px;
   color: #ffffff;
   opacity: 1;
 }

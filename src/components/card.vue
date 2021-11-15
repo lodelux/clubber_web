@@ -24,26 +24,25 @@ export default {
 h3 {
   @apply mt-4 mx-3;
   color: #73737d;
-  font-size: 11.5px;
-  line-height: 14px;
+  font-size: 0.71875rem;
+  line-height: 0.9rem;
 }
 h2 {
   @apply mx-3;
   color: #06001e;
-  font-size: 22px;
+  font-size: 1.375rem;
 }
 h1 {
   @apply mt-4 mx-3;
   color: #ea0053;
-  font-size: 22px;
+  font-size: 1.375rem;
 }
 .imgblock {
   @apply w-full flex justify-center;
-  height: 166px;
+  height: 10.375rem;
 }
 img {
-  
-  height: 166px;
+  @apply w-full h-full;
 }
 .card {
   @apply  py-5 text-left;
@@ -51,7 +50,7 @@ img {
   box-shadow: 0px 6px 12px #00000029;
   opacity: 1;
   border-radius: 10px;
-  width: 260px;
-  min-height: 339px;
+  min-height: 21.2rem;
+  width: 15.42rem;
 }
 </style>

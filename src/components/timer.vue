@@ -1,8 +1,10 @@
 <template>
   <span class="card">
     <h3 class="w-full">
-      {{ this.timeLeft.Days.padStart(2,'0') }}d {{ this.timeLeft.Hours.padStart(2,'0') }}h
-      {{ this.timeLeft.Minutes.padStart(2,'0') }}m {{ this.timeLeft.Seconds.padStart(2,'0') }}s
+      {{ this.timeLeft.Days.padStart(2, "0") }}d
+      {{ this.timeLeft.Hours.padStart(2, "0") }}h
+      {{ this.timeLeft.Minutes.padStart(2, "0") }}m
+      {{ this.timeLeft.Seconds.padStart(2, "0") }}s
     </h3></span
   >
 </template>
@@ -48,8 +50,9 @@ export default {
 <style scoped>
 .card {
   @apply px-20 py-3 text-center;
-  font: normal normal bold 20px/21px Nunito;
-  letter-spacing: 0.3px;
+  min-width: 18.46rem;
+  min-height: 2.75rem;
+  font: normal normal bold 1.25rem Nunito;
   color: #ffffff;
   opacity: 1;
   background: #ea0053 0% 0% no-repeat padding-box;

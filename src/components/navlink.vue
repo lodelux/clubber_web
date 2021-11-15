@@ -16,8 +16,7 @@ export default {};
   height: max-content;
 
   text-align: left;
-  font: normal normal 600  2.96vh Nunito;
-  letter-spacing: 0.24px;
+  font: normal normal 600  1rem Nunito;
   color: #ffffff;
   opacity: 1;
 }

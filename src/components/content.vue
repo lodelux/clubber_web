@@ -81,8 +81,7 @@ export default {
 <style scoped>
 .how {
   @apply w-full pb-12 text-center;
-  font: normal normal bold 36px/21px Nunito;
-  letter-spacing: 0.54px;
+  font: normal normal bold 2.25rem Nunito;
   color: #171424;
   opacity: 1;
 }
@@ -92,15 +91,13 @@ export default {
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
   opacity: 1;
-  font: normal normal bold 16px/21px Nunito;
-  letter-spacing: 0.24px;
+  font: normal normal bold 1rem Nunito;
   color: #ea0053;
   opacity: 1;
 }
 .info {
   @apply md:w-1/2 text-center p-6;
-  font: normal normal bold 24px/35px Nunito;
-  letter-spacing: 0.36px;
+  font: normal normal bold 1.5rem Nunito;
   color: #ffffff;
 }
 .bgimg {
@@ -111,12 +108,11 @@ export default {
 }
 .splash {
   @apply w-full  flex flex-col justify-center items-center space-y-10;
-  min-height: 1080px;
+  min-height: 28.125rem;
 }
 
 .logo {
-  font: normal normal bold 79.5px/108.5px Nunito;
-  letter-spacing: 0px;
+  font: normal normal bold 4.965rem Nunito;
   opacity: 1;
   color: #ffff;
 }
@@ -127,14 +123,13 @@ export default {
 
 .caption {
   text-align: center;
-  font: normal normal bold 21px/22px Nunito;
-  letter-spacing: 0.32px;
+  font: normal normal bold 1.3rem Nunito;
   color: #ffffff;
 }
 
 .hero {
   @apply w-full flex flex-col justify-evenly items-center;
-  min-height: 270px;
+  min-height: 16.875rem;
   background: #ea0053 0% 0% no-repeat padding-box;
 }
 </style>

@@ -9,6 +9,7 @@ export default {};
 </script>
 
 <style scoped>
+
 .navlink {
   @apply hover:bg-gray-600 cursor-pointer py-2 px-4;
   border-radius: 10px;
@@ -16,7 +17,7 @@ export default {};
   height: max-content;
 
   text-align: left;
-  font: normal normal 600  1rem Nunito;
+  font: normal normal 600 1rem Nunito;
   color: #ffffff;
   opacity: 1;
 }

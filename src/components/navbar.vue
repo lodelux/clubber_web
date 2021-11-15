@@ -1,5 +1,6 @@
 <template>
   <div class="nav">
+    <navlink><img src="../assets/logoNoBg.png" /></navlink>
     <navlink v-for="link in links" :key="link">{{ link }}</navlink>
   </div>
 </template>
@@ -12,13 +13,17 @@ export default {
   },
   data() {
     return {
-      links: ["Home", "Chi Siamo", "Contatti"],
+      links: ["Chi Siamo", "Contatti"],
     };
   },
 };
 </script>
 
 <style scoped>
+img {
+  width: 3.125rem;
+}
+
 .nav {
   @apply flex w-full justify-center md:justify-start md:space-x-10 items-center md:pl-10;
   height: 4.375rem;

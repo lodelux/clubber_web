@@ -8,6 +8,6 @@ html {
 
 @media (min-width: 1024px) {
   html {
-    font-size: 2.96vh;
+    font-size:130%;
   }
 }

@@ -1,15 +1,26 @@
 <template>
-  <div id="nav">
-  </div>
+  <Navbar/>
   <router-view />
+  <Foot/>
 </template>
 
-<style>
+<script>
+import Navbar from "@/components/navbar.vue";
+import Foot from "@/components/Foot.vue";
+export default {
+  name: "Home",
+  components: {
+    Foot,
+    Navbar,
 
+},
+};
+</script>
+
+<style>
 #app {
   font-family: Nunito;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
 }
 </style>

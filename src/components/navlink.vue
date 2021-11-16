@@ -1,15 +1,23 @@
 <template>
-  <button class="navlink">
-    <slot></slot>
-  </button>
+  <router-link :to="{ name: to }">
+    <button class="navlink">
+      <slot></slot>
+    </button>
+  </router-link>
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    to: {
+      type: String,
+      required: true,
+    },
+  },
+};
 </script>
 
 <style scoped>
-
 .navlink {
   @apply hover:bg-gray-600 cursor-pointer py-2 px-4;
   border-radius: 10px;

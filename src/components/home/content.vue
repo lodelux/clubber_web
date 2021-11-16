@@ -18,7 +18,7 @@
     </p>
     <button class="us">Chi Siamo</button>
   </div>
-  <div class="how">
+  <div class="how mb-5">
     <p class="mt-12">Come funziona</p>
     <div
       class="
@@ -40,8 +40,8 @@
 </template>
 
 <script>
-import Timer from "@/components/timer.vue";
-import Card from "@/components/card.vue";
+import Timer from "@/components/home/timer.vue";
+import Card from "@/components/home/card.vue";
 export default {
   components: {
     Timer,
@@ -101,14 +101,16 @@ export default {
   color: #ffffff;
 }
 .bgimg {
-  background: transparent url("../assets/background.png") no-repeat;
+  /* to put absolute path */
+  background: transparent url("../../assets/background.png") no-repeat;
   background-size: 1920px;
   background-position: 50%;
   opacity: 1;
 }
 .splash {
   @apply w-full  flex flex-col justify-center items-center space-y-10;
-  min-height: 28.125rem;
+  min-height:calc(100vh - 4.375rem);
+  /* min-height: 28.125rem; */
 }
 
 .logo {

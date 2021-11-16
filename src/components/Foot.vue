@@ -1,5 +1,5 @@
 <template>
-  <div class="foot flex mt-5 justify-evenly py-6">
+  <div class="foot flex  justify-evenly py-6">
     <div class="text-white pt-5 pl-10">
       <h1>Contatti</h1>
       <br />

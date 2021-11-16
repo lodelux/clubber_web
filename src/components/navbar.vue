@@ -1,7 +1,11 @@
 <template>
   <div class="nav">
-    <navlink><img src="../assets/logoNoBg.png" /></navlink>
-    <navlink v-for="link in links" :key="link">{{ link }}</navlink>
+    <navlink :to="'Home'">
+      <img src="../assets/logoNoBg.png" />
+    </navlink>
+    <navlink v-for="link in links" :key="link.name" :to="link.name">
+      {{ link.text }}
+    </navlink>
   </div>
 </template>
 
@@ -13,7 +17,16 @@ export default {
   },
   data() {
     return {
-      links: ["Chi Siamo", "Contatti"],
+      links: [
+        {
+          text: "Chi Siamo",
+          name: "About",
+        },
+        {
+          text: "Contatti",
+          name: "Home",
+        },
+      ],
     };
   },
 };
@@ -26,7 +39,7 @@ img {
 
 .nav {
   @apply flex w-full justify-center md:justify-start md:space-x-10 items-center md:pl-10;
-  height: 4.375rem;
+  min-height: 4.375rem;
   background: #06001e 0% 0% no-repeat padding-box;
   opacity: 1;
 }

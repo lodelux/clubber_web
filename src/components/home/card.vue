@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <div class="imgblock">
-      <img :src="require('../assets/' + this.card.img)" />
+      <img :src="require('@/assets/' + this.card.img)" />
     </div>
     <h1>{{ this.card.title1 }}</h1>
     <h2>{{ this.card.title2 }}</h2>

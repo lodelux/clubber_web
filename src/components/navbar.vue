@@ -24,7 +24,7 @@ export default {
         },
         {
           text: "Contatti",
-          name: "Home",
+          name: "Contacts",
         },
       ],
     };

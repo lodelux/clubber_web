@@ -2,11 +2,7 @@
   <div class="wrapper relative">
     <div class="absolute w-full h-full bgimg "></div>
     <div class="splash  relative">
-      <div class="flex flex-row">
-        <p class="logo opacity-1">Clu</p>
-        <p class="a logo">bb</p>
-        <p class="logo">er</p>
-      </div>
+      <text-logo/>
       <div class="caption">Alla pubblicazione</div>
       <Timer :toDate="this.toDate"></Timer>
     </div>
@@ -42,10 +38,12 @@
 <script>
 import Timer from "@/components/home/timer.vue";
 import Card from "@/components/home/card.vue";
+import TextLogo from '../textLogo.vue';
 export default {
   components: {
     Timer,
     Card,
+    TextLogo,
   },
   data() {
     return {
@@ -113,15 +111,6 @@ export default {
   /* min-height: 28.125rem; */
 }
 
-.logo {
-  font: normal normal bold 4.965rem Nunito;
-  opacity: 1;
-  color: #ffff;
-}
-.a {
-  opacity: 1;
-  color: #ea0053;
-}
 
 .caption {
   text-align: center;

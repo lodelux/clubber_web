@@ -1,5 +1,5 @@
 <template>
-  <div id ="story" class="banner flex flex-col space-y-5">
+  <div id="story" class="banner flex flex-col space-y-5">
     <span class="block text pt-5 mx-5 lg:ml-24">
       Durante il lockdown <br />
       con la voglia di ballare e le discoteche
@@ -16,8 +16,8 @@
       tipo quando vai in una nuova città, o quando non conosci nessuno che ti
       possa far entrare (o imbucare).
     </span>
-    <div class="w-full flex-grow flex items-end">
-      <span class=" inline-block bg-black w-1/3 lg:w-1/4 h-96 text-white">IPHONE1</span>
+    <div class="w-full flex-grow flex items-end justify-center">
+      <img src="@/assets/tel1.png" class="inline-block"  style="  transform: rotateY(180deg);"/>
       <span class="inline-block text w-2/4 self-center">
         Così è nata la voglia di rendere le discoteche più accessibili, ma
         come?<br /><br />
@@ -27,7 +27,8 @@
           >La parola d’ordine è stata semplicità
         </span>
       </span>
-      <span class="hidden lg:inline-block bg-black w-1/4 h-96 text-white">IPHONE2</span>
+      <img src="@/assets/tel2.png" class="hidden lg:inline-block" />
+      
     </div>
   </div>
 </template>
@@ -37,6 +38,10 @@ export default {};
 </script>
 
 <style scoped>
+
+img {
+  width: 22.5rem;
+}
 .text {
   @apply inline-block text-white;
 }
@@ -46,6 +51,5 @@ export default {};
 }
 .banner {
   background: #ea0053 0% 0% no-repeat padding-box;
-  min-height: 100vh;
 }
 </style>

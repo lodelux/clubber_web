@@ -16,7 +16,8 @@
       tipo quando vai in una nuova città, o quando non conosci nessuno che ti
       possa far entrare (o imbucare).
     </span>
-    <div class="w-full flex-grow flex items-end justify-center">
+    <div class="w-full flex-grow flex items-end justify-start md:justify-center">
+      <!-- hidden if very small screen -->
       <img src="@/assets/Chi_siamo1.png" class="hide self-center" />
       <span class="margin inline-block text-white w-2/4 self-center">
         Così è nata la voglia di rendere le discoteche più accessibili, ma
@@ -27,6 +28,7 @@
           >La parola d’ordine è stata semplicità
         </span>
       </span>
+      <!-- hidden if phone -->
       <img src="@/assets/Chi_siamo2.png" class="hidden lg:inline-block" />
     </div>
   </div>
@@ -40,17 +42,26 @@ export default {};
 .hide {
   display: none;
 }
+
+/* margin for no phones */
+.margin {
+  @apply ml-5;
+}
+
+/* if not super small width show first phone and apply neg. margin to text to "enter" the iphone png  but if screen sm remove the neg. margin*/
 @media (min-width: 340px) {
   .hide {
     display: inline-block;
   }
   .margin {
-    @apply -ml-40 md:-ml-0;
+    @apply -ml-32 sm:-ml-0;
   }
 }
 img {
-  width: 22.5rem;
+  width: 19rem;
+
 }
+
 
 .big {
   @apply font-bold;

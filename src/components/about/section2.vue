@@ -1,6 +1,6 @@
 <template>
   <div id="story" class="banner flex flex-col space-y-5">
-    <span class="block text pt-5 mx-5 lg:ml-24">
+    <span class="block text-white pt-5 mx-5 lg:ml-24">
       Durante il lockdown <br />
       con la voglia di ballare e le discoteche
       <span class="big text line-through inline ml-1">CHIUSE</span>
@@ -17,8 +17,8 @@
       possa far entrare (o imbucare).
     </span>
     <div class="w-full flex-grow flex items-end justify-center">
-      <img src="@/assets/tel1.png" class="inline-block"  style="  transform: rotateY(180deg);"/>
-      <span class="inline-block text w-2/4 self-center">
+      <img src="@/assets/Chi_siamo1.png" class="hide self-center" />
+      <span class="margin inline-block text-white w-2/4 self-center">
         Così è nata la voglia di rendere le discoteche più accessibili, ma
         come?<br /><br />
         <span class="big">L’idea!</span> <br /><br />Un’ applicazione che ti
@@ -27,8 +27,7 @@
           >La parola d’ordine è stata semplicità
         </span>
       </span>
-      <img src="@/assets/tel2.png" class="hidden lg:inline-block" />
-      
+      <img src="@/assets/Chi_siamo2.png" class="hidden lg:inline-block" />
     </div>
   </div>
 </template>
@@ -38,13 +37,21 @@ export default {};
 </script>
 
 <style scoped>
-
+.hide {
+  display: none;
+}
+@media (min-width: 340px) {
+  .hide {
+    display: inline-block;
+  }
+  .margin {
+    @apply -ml-40 md:-ml-0;
+  }
+}
 img {
   width: 22.5rem;
 }
-.text {
-  @apply inline-block text-white;
-}
+
 .big {
   @apply font-bold;
   font-size: 1.25rem;

@@ -5,9 +5,11 @@
       <br />
       <h1>SEMPLICE</h1>
     </div>
+     <a href="#story" class="text-white font-bold">
     <button class="btn">
-      <a href="#story" class="text-white font-bold">La nostra storia</a>
+     La nostra storia
     </button>
+     </a>
     <div class="py-10 w-full flex-grow-0 flex flex-col space-y-10 lg:space-y-0 lg:flex-row  items-center lg:justify-evenly">
       <div v-for="card in cards" :key="card.t1">
         <div

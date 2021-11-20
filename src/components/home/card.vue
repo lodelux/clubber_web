@@ -45,7 +45,7 @@ img {
   @apply w-full h-full;
 }
 .card {
-  @apply  py-5 text-left;
+  @apply py-5 text-left;
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 0px 6px 12px #00000029;
   opacity: 1;

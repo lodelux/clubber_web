@@ -5,12 +5,20 @@
       <br />
       <h1>SEMPLICE</h1>
     </div>
-     <a href="#story" class="text-white font-bold">
-    <button class="btn">
-     La nostra storia
-    </button>
-     </a>
-    <div class="py-10 w-full flex-grow-0 flex flex-col space-y-10 lg:space-y-0 lg:flex-row  items-center lg:justify-evenly">
+    <a href="#story" class="text-white font-bold">
+      <button class="btn">La nostra storia</button>
+    </a>
+    <div
+      class="
+        py-10
+        w-full
+        flex-grow-0 flex flex-col
+        space-y-10
+        lg:space-y-0 lg:flex-row
+        items-center
+        lg:justify-evenly
+      "
+    >
       <div v-for="card in cards" :key="card.t1">
         <div
           class="
@@ -18,16 +26,17 @@
             rounded-lg
             flex flex-col
             items-center
-            justify-center space-y-1 p-3
+            justify-center
+            space-y-1
+            p-3
           "
-        > 
-        <h3 class=" text-center">{{card.t1}}</h3>
-        <h4 class="text-center">{{card.t2}}</h4>
+        >
+          <h3 class="text-center">{{ card.t1 }}</h3>
+          <h4 class="text-center">{{ card.t2 }}</h4>
         </div>
       </div>
     </div>
   </div>
-  
 </template>
 
 <script>
@@ -45,13 +54,15 @@ export default {
 </script>
 
 <style scoped>
-h4{
+html {
+  scroll-behavior: smooth;
+}
+h4 {
   font: normal normal 600 1.375rem Nunito;
 }
 h3 {
-  color: #EA0053;
+  color: #ea0053;
   font: normal normal 600 2.25rem Nunito;
-  
 }
 .card {
   min-width: 14.937rem;
@@ -78,7 +89,7 @@ h2 {
   color: #06001e;
 }
 .contain {
-  @apply flex flex-col   items-center justify-between py-8  ;
+  @apply flex flex-col   items-center justify-between py-8;
   min-height: calc(100vh - 4.375rem);
 }
 </style>

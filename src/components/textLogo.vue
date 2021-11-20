@@ -19,7 +19,7 @@ export default {
 
 <style scoped>
 .logo {
-  font: normal normal bold 4.965rem Nunito;
+  font: normal normal 800 4.965rem Nunito;
   opacity: 1;
   color: #ffff;
 }

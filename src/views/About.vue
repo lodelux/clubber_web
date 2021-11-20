@@ -2,7 +2,7 @@
   <section-1 />
   <section-2 />
   <section-3 />
-  <div class=" hidden md:block bgcolor w-full h-screen">
+  <div class="hidden md:block bgcolor w-full h-screen">
     <div class="w-full h-screen bg"></div>
   </div>
 </template>
@@ -17,7 +17,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .bgcolor {
   background-color: #f6f7f7;
 }

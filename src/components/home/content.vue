@@ -12,7 +12,9 @@
       "Prenotare una serata in discoteca diventa semplice. Addio sbatti di
       cercare un PR, ciao bello non hai capito che figata di app che siamo"
     </p>
-    <button class="us">Chi Siamo</button>
+    <router-link :to="{ name: 'About' }">
+      <button class="us">Chi Siamo</button>
+    </router-link>
   </div>
   <div class="how mb-5">
     <p class="mt-12">Come funziona</p>
@@ -61,7 +63,7 @@ export default {
           title1: "Personalizza",
           title2: "la tua prenotazione",
           subtitle1:
-            "Aggiungi alla prenotazione drink,bottiglie,tavoli,offerte e molto altro",
+            "Aggiungi alla prenotazione drink, bottiglie, tavoli, offerte e molto altro",
         },
         {
           img: "Paga.svg",

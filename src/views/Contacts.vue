@@ -14,15 +14,15 @@
       <text-logo color="black" />
       <h2>
         Email:
-        <h3>clubber@clubber.it</h3>
+        <h3>info@clubberpeople.com</h3>
       </h2>
       <h2>
         Instagram:
-        <h3>@clubber</h3>
+        <h3>@clubber_people</h3>
       </h2>
       <h2>
         Facebook:
-        <h3>clubber</h3>
+        <h3>clubber (@clubberpeople)</h3>
       </h2>
     </div>
   </div>

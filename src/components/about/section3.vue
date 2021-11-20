@@ -60,15 +60,14 @@ export default {
 
 <style scoped>
 h2 {
-  color: #06001E;
+  color: #06001e;
 }
 h1 {
-  color: #EA0053;
+  color: #ea0053;
 }
 .card {
   background-color: white;
   min-width: 17.18rem;
-
 }
 .banner {
   background: #06001e 0% 0% no-repeat padding-box;

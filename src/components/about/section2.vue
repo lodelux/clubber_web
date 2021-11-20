@@ -16,7 +16,9 @@
       tipo quando vai in una nuova città, o quando non conosci nessuno che ti
       possa far entrare (o imbucare).
     </span>
-    <div class="w-full flex-grow flex items-end justify-start md:justify-center">
+    <div
+      class="w-full flex-grow flex items-end justify-start md:justify-center"
+    >
       <!-- hidden if very small screen -->
       <img src="@/assets/Chi_siamo1.png" class="hide self-center" />
       <span class="margin inline-block text-white w-2/4 self-center">
@@ -59,12 +61,7 @@ export default {};
 }
 img {
   width: 19rem;
-
 }
-
-
-
-
 
 .big {
   @apply font-bold;

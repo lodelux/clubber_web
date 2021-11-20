@@ -1,7 +1,7 @@
 <template>
-  <Navbar/>
+  <Navbar />
   <router-view />
-  <Foot/>
+  <Foot />
 </template>
 
 <script>
@@ -12,8 +12,7 @@ export default {
   components: {
     Foot,
     Navbar,
-
-},
+  },
 };
 </script>
 

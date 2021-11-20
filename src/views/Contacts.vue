@@ -1,18 +1,30 @@
 <template>
-  <div class="cont flex flex-col items-center justify-center space-y-5">
-    <text-logo color="black" />
-    <h2>
-      Email:
-      <h3>clubber@clubber.it</h3>
-    </h2>
-    <h2>
-      Instagram:
-      <h3>@clubber</h3>
-    </h2>
-    <h2>
-      Facebook:
-      <h3>clubber</h3>
-    </h2>
+  <div class="cont w-full">
+    <div
+      class="
+        flex flex-col
+        w-full
+        items-center
+        h-full
+        justify-start
+        pt-14
+        space-y-5
+      "
+    >
+      <text-logo color="black" />
+      <h2>
+        Email:
+        <h3>clubber@clubber.it</h3>
+      </h2>
+      <h2>
+        Instagram:
+        <h3>@clubber</h3>
+      </h2>
+      <h2>
+        Facebook:
+        <h3>clubber</h3>
+      </h2>
+    </div>
   </div>
 </template>
 
@@ -33,6 +45,11 @@ h2 {
   font: normal normal bold 1rem Nunito;
 }
 .cont {
-  min-height: calc(100vh - 4.375rem);
+  height: calc(100vh - 4.375rem);
+  background: transparent url("../assets/contacts.svg") no-repeat;
+  background-size: 1920px;
+  background-position-x: 50%;
+  background-position-y: bottom;
+  opacity: 1;
 }
 </style>

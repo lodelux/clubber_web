@@ -63,6 +63,9 @@ img {
 }
 
 
+
+
+
 .big {
   @apply font-bold;
   font-size: 1.25rem;

@@ -1,7 +1,8 @@
 <template>
   <Navbar />
+  {{ this.$router.route }}
   <router-view />
-  <Foot />
+  <Foot v-if="pos != 'Contacts'" />
 </template>
 
 <script>
@@ -12,6 +13,11 @@ export default {
   components: {
     Foot,
     Navbar,
+  },
+  computed: {
+    pos() {
+      return this.$route.name;
+    },
   },
 };
 </script>

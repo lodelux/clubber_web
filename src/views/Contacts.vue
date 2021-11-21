@@ -36,6 +36,9 @@ export default {
 </script>
 
 <style scoped>
+.foot {
+  display: none;
+}
 h3 {
   @apply inline;
   font: normal normal normal 1rem Nunito;

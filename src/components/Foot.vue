@@ -5,17 +5,17 @@
       <br />
       <h2>
         Email: <br />
-        <h3> info@clubberpeople.com</h3>
+        <h3>&nbsp;info@clubberpeople.com</h3>
       </h2>
       <br />
       <h2>
-        Instagram: <br />
-        <h3> @clubber_people</h3>
+        Instagram:<br />
+        <h3>&nbsp;@clubber_people</h3>
       </h2>
       <br />
       <h2>
         Facebook: <br />
-        <h3> Clubber (@clubberpeople)</h3>
+        <h3>&nbsp;Clubber (@clubberpeople)</h3>
       </h2>
     </div>
     <div class="text-white pt-5 pl-3 pr-3 flex-grow">

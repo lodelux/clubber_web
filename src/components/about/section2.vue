@@ -17,10 +17,10 @@
       possa far entrare (o imbucare).
     </span>
     <div
-      class="w-full flex-grow flex items-end justify-start md:justify-center"
+      class="w-full flex-grow flex items-end justify-start md:justify-between"
     >
       <!-- hidden if very small screen -->
-      <img src="@/assets/Chi_siamo1.png" class="hide self-center" />
+      <img src="@/assets/Chi_siamo1.png" class="hide" />
       <span class="margin inline-block text-white w-2/4 self-center">
         Così è nata la voglia di rendere le discoteche più accessibili, ma
         come?<br /><br />

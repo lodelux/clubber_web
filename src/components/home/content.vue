@@ -49,7 +49,7 @@ export default {
   data() {
     return {
       // UTC Epoch time in MILLISECONDS
-      toDate: 1639506500000,
+      toDate: 1638442800000,
       cards: [
         {
           img: "Trova.svg",

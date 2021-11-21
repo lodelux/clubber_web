@@ -1,24 +1,24 @@
 <template>
   <div class="foot flex justify-start py-6">
-    <div class="text-white pt-5 pl-10 flex-grow">
+    <div class="text-white pt-5 pl-3 md:pl-10 flex-grow">
       <h1>Contatti</h1>
       <br />
       <h2>
-        Email:
-        <h3>info@clubberpeople.com</h3>
+        Email: <br />
+        <h3> info@clubberpeople.com</h3>
       </h2>
       <br />
       <h2>
-        Instagram:
-        <h3>@clubber_people</h3>
+        Instagram: <br />
+        <h3> @clubber_people</h3>
       </h2>
       <br />
       <h2>
-        Facebook:
-        <h3>Clubber (@clubberpeople)</h3>
+        Facebook: <br />
+        <h3> Clubber (@clubberpeople)</h3>
       </h2>
     </div>
-    <div class="text-white pt-5 pl-11 ml-6 flex-grow">
+    <div class="text-white pt-5 pl-3 pr-3 flex-grow">
       <h1>
         <a
           href="https://www.iubenda.com/termini-e-condizioni/15672760"
@@ -44,7 +44,7 @@ export default {};
 
 <style scoped>
 h3 {
-  @apply inline;
+  @apply inline-block;
   font: normal normal normal 1rem Nunito;
 }
 h2 {

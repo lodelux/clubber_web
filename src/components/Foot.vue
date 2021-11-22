@@ -3,20 +3,26 @@
     <div class="text-white pt-5 pl-3 md:pl-10 flex-grow">
       <h1>Contatti</h1>
       <br />
-      <h2>
-        Email: <br />
-        <h3>&nbsp;info@clubberpeople.com</h3>
-      </h2>
+      <a href="mailto:info@clubberpeople.com">
+        <h2>
+          Email: <br />
+          <h3>&nbsp;info@clubberpeople.com</h3>
+        </h2>
+      </a>
       <br />
-      <h2>
-        Instagram:<br />
-        <h3>&nbsp;@clubber_people</h3>
-      </h2>
+      <a href="https://www.instagram.com/clubber_people/" target="_blank">
+        <h2>
+          Instagram:<br />
+          <h3>&nbsp;@clubber_people</h3>
+        </h2>
+      </a>
       <br />
-      <h2>
-        Facebook: <br />
-        <h3>&nbsp;Clubber (@clubberpeople)</h3>
-      </h2>
+      <a href="https://www.facebook.com/clubberpeople" target="_blank">
+        <h2>
+          Facebook: <br />
+          <h3>&nbsp;Clubber (@clubberpeople)</h3>
+        </h2>
+      </a>
     </div>
     <div class="text-white pt-5 pl-3 pr-3 flex-grow">
       <h1>

@@ -3,7 +3,7 @@
     <span class="block  pt-5 mx-5 lg:ml-24">
       Durante il lockdown <br />
       con la voglia di ballare e le discoteche
-      <span class="big text line-through inline ml-1">CHIUSE</span>
+      <span class="big text  inline ml-1">CHIUSE</span>
       <br />
       pensavamo con nostalgia a tutte
       <span class="big text inline ml-1"

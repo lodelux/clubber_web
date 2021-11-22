@@ -1,11 +1,13 @@
 <template>
   <div class="wrapper relative">
     <div class="absolute w-full h-full bgimg"></div>
-    <div class="splash relative">
-      <text-logo />
-      <div class="caption">Alla pubblicazione</div>
-      <Timer :toDate="this.toDate"></Timer>
-    </div>
+    <transition name="fade-in" appear>
+      <div class="splash relative">
+        <text-logo />
+        <div class="caption">Alla pubblicazione</div>
+        <Timer :toDate="this.toDate"></Timer>
+      </div>
+    </transition>
   </div>
   <div class="hero">
     <p class="info">

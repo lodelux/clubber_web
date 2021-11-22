@@ -1,6 +1,6 @@
 <template>
   <router-link :to="{ name: to }">
-    <button class="navlink">
+    <button class="navlink" :class="isCurrent ? 'font-bold' : 'font-semibold'">
       <slot></slot>
     </button>
   </router-link>
@@ -14,6 +14,11 @@ export default {
       required: true,
     },
   },
+  computed: {
+    isCurrent() {
+      return this.to == this.$route.name;
+    },
+  },
 };
 </script>
 
@@ -25,7 +30,8 @@ export default {
   height: max-content;
 
   text-align: left;
-  font: normal normal 600 1rem Nunito;
+  font-family: Nunito;
+  font-size: 1rem;
   color: #ffffff;
   opacity: 1;
 }

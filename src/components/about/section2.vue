@@ -1,6 +1,6 @@
 <template>
   <div id="story" class="banner flex flex-col space-y-5">
-    <span class="block text-white pt-5 mx-5 lg:ml-24">
+    <span class="block  pt-5 mx-5 lg:ml-24">
       Durante il lockdown <br />
       con la voglia di ballare e le discoteche
       <span class="big text line-through inline ml-1">CHIUSE</span>
@@ -21,7 +21,7 @@
     >
       <!-- hidden if very small screen -->
       <img src="@/assets/Chi_siamo1.png" class="hide" />
-      <span class="margin inline-block text-white w-2/4 self-center">
+      <span class="margin inline-block  w-2/4 self-center">
         Così è nata la voglia di rendere le discoteche più accessibili, ma
         come?<br /><br />
         <span class="big">L’idea!</span> <br /><br />Un’ applicazione che ti
@@ -68,6 +68,7 @@ img {
   font-size: 1.25rem;
 }
 .banner {
-  background: #ea0053 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  color: #06001E;
 }
 </style>

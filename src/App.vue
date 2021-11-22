@@ -28,4 +28,13 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.fade-in-enter-from {
+  opacity: 0;
+
+}
+
+.fade-in-enter-active {
+  transition: all 1s ease-in;
+}
 </style>

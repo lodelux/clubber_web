@@ -5,21 +5,21 @@
       <br />
       <a href="mailto:info@clubberpeople.com">
         <h2>
-          Email: <br />
+          Email: 
           <h3>&nbsp;info@clubberpeople.com</h3>
         </h2>
       </a>
       <br />
       <a href="https://www.instagram.com/clubber_people/" target="_blank">
         <h2>
-          Instagram:<br />
+          Instagram:
           <h3>&nbsp;@clubber_people</h3>
         </h2>
       </a>
       <br />
       <a href="https://www.facebook.com/clubberpeople" target="_blank">
         <h2>
-          Facebook: <br />
+          Facebook: 
           <h3>&nbsp;Clubber (@clubberpeople)</h3>
         </h2>
       </a>

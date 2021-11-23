@@ -11,7 +11,7 @@ import Section2 from "../components/about/section2.vue";
 import Section3 from "../components/about/section3.vue";
 
 export default {
-  components: {  Section2, Section3 },
+  components: { Section2, Section3 },
 };
 </script>
 

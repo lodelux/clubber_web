@@ -70,7 +70,7 @@ h1 {
   min-width: 17.18rem;
 }
 .banner {
-  background: #EA0053 0% 0% no-repeat padding-box;
+  background: #ea0053 0% 0% no-repeat padding-box;
   font: normal normal 600 1.5625rem Nunito;
   color: white;
 }

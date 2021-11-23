@@ -32,7 +32,7 @@ export default {
     //every second calculate remaining time
     countdown() {
       setInterval(() => {
-        if (this.toDate - Math.floor(Date.now()) >  0 ) {
+        if (this.toDate - Math.floor(Date.now()) > 0) {
           this.timeLeft = new Date(this.toDate - Math.floor(Date.now()));
           let seconds = Math.floor(this.timeLeft.getTime() / 1000);
           this.timeLeft.Seconds = (seconds % 60).toString();

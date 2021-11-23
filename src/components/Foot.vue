@@ -5,7 +5,7 @@
       <br />
       <a href="mailto:info@clubberpeople.com">
         <h2>
-          Email: 
+          Email:
           <h3>&nbsp;info@clubberpeople.com</h3>
         </h2>
       </a>
@@ -19,7 +19,7 @@
       <br />
       <a href="https://www.facebook.com/clubberpeople" target="_blank">
         <h2>
-          Facebook: 
+          Facebook:
           <h3>&nbsp;Clubber (@clubberpeople)</h3>
         </h2>
       </a>

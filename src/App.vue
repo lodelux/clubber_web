@@ -31,7 +31,6 @@ export default {
 
 .fade-in-enter-from {
   opacity: 0;
-
 }
 
 .fade-in-enter-active {

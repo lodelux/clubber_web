@@ -12,18 +12,24 @@
       "
     >
       <text-logo color="black" />
-      <h2>
-        Email:
-        <h3>info@clubberpeople.com</h3>
-      </h2>
-      <h2>
-        Instagram:
-        <h3>@clubber_people</h3>
-      </h2>
-      <h2>
-        Facebook:
-        <h3>clubber (@clubberpeople)</h3>
-      </h2>
+      <a href="mailto:info@clubberpeople.com" target="_blank">
+        <h2>
+          Email:
+          <h3>info@clubberpeople.com</h3>
+        </h2>
+      </a>
+      <a href="www.instagram.com/clubber_people" target="_blank">
+        <h2>
+          Instagram:
+          <h3>@clubber_people</h3>
+        </h2>
+      </a>
+      <a href="www.facebook.com/clubberpeople" target="_blank">
+        <h2>
+          Facebook:
+          <h3>clubber (@clubberpeople)</h3>
+        </h2>
+      </a>
     </div>
   </div>
 </template>

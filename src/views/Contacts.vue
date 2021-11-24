@@ -7,8 +7,8 @@
         items-center
         h-full
         justify-start
-        pt-14
-        space-y-5
+        pt-12
+        space-y-3
       "
     >
       <text-logo color="black" />
@@ -18,13 +18,13 @@
           <h3>info@clubberpeople.com</h3>
         </h2>
       </a>
-      <a href="www.instagram.com/clubber_people" target="_blank">
+      <a href="https://www.instagram.com/clubber_people" target="_blank">
         <h2>
           Instagram:
           <h3>@clubber_people</h3>
         </h2>
       </a>
-      <a href="www.facebook.com/clubberpeople" target="_blank">
+      <a href="https://www.facebook.com/clubberpeople" target="_blank">
         <h2>
           Facebook:
           <h3>clubber (@clubberpeople)</h3>

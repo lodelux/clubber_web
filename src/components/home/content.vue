@@ -9,15 +9,6 @@
       </div>
     </transition>
   </div>
-  <div class="hero">
-    <p class="info">
-      "Prenotare una serata in discoteca diventa semplice. Addio sbatti di
-      cercare un PR, ciao bello non hai capito che figata di app che siamo"
-    </p>
-    <router-link :to="{ name: 'About' }">
-      <button class="us">Chi Siamo</button>
-    </router-link>
-  </div>
   <div class="how mb-5">
     <p class="mt-12">Come funziona</p>
     <div
@@ -35,6 +26,16 @@
     >
       <card v-for="(card, i) in this.cards" :key="i" :card="card"></card>
     </div>
+  </div>
+
+  <div class="hero">
+    <p class="info">
+      "Prenotare una serata in discoteca diventa semplice. Addio sbatti di
+      cercare un PR, ciao bello non hai capito che figata di app che siamo"
+    </p>
+    <router-link :to="{ name: 'About' }">
+      <button class="us">Chi Siamo</button>
+    </router-link>
   </div>
 </template>
 

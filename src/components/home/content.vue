@@ -4,8 +4,8 @@
     <transition name="fade-in" appear>
       <div class="splash relative">
         <text-logo />
-        <div class="caption">Alla pubblicazione</div>
-        <Timer :toDate="this.toDate"></Timer>
+        <!-- <div class="caption">Alla pubblicazione</div>
+        <Timer :toDate="this.toDate"></Timer> -->
       </div>
     </transition>
   </div>
@@ -40,12 +40,10 @@
 </template>
 
 <script>
-import Timer from "@/components/home/timer.vue";
 import Card from "@/components/home/card.vue";
 import TextLogo from "../textLogo.vue";
 export default {
   components: {
-    Timer,
     Card,
     TextLogo,
   },

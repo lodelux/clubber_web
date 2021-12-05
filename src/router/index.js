@@ -25,7 +25,12 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/Contacts.vue"),
   },
-
+  {
+    path: "/payment_confirmation",
+    name: "PaymentConfirmation",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/PaymentConfirm.vue"),
+  },
   {
     path: "/:catchAll(.*)",
     redirect: { name: "Home" },

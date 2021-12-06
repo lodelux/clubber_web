@@ -1,6 +1,7 @@
 <template>
-  {{ this.$route.query.payment_intent }}
-  {{ this.$route.query.client_uid }}
+  <p v-if="this.state == 'loading'">LOADING</p>
+  <p v-if="this.state == 200">SUCCESS</p>
+  <p v-if="this.state != 200 && this.state != 'loading'">ERROR</p>
 </template>
 
 <script>
@@ -9,6 +10,7 @@ import axios from "axios";
 export default {
   data() {
     return {
+      state: "loading",
       payload: {
         payment_intent: "",
         client_uid: "",
@@ -18,18 +20,20 @@ export default {
   mounted() {
     this.payload.payment_intent = this.$route.query.payment_intent;
     this.payload.client_uid = this.$route.query.client_uid;
-    console.log(this.payload)
     axios.defaults.headers.post["Content-Type"] =
-      "application/json;charset=utf-8";
-    axios.defaults.headers.post["Access-Control-Allow-Origin"] = "*";
+      "application/json;charset=UTF-8";
     axios
       .post(
-        // 'https://jsonplaceholder.typicode.com/posts',
         "https://us-central1-clubber-73cbd.cloudfunctions.net/confirmBooking",
         this.payload
       )
       .then((res) => {
-        console.log(res);
+        this.state = res.status;
+      })
+      .catch((error) => {
+        if (error) {
+          this.state = "error";
+        }
       });
   },
 };

@@ -25,9 +25,6 @@
     </div>
   </div>
 
-  <!-- <p v-if="this.state == 'loading'">LOADING</p>
-  <p v-if="this.state == 200">SUCCESS</p>
-  <p v-if="this.state != 200 && this.state != 'loading'">ERROR</p> -->
 </template>
 
 <script>
@@ -56,11 +53,6 @@ export default {
       )
       .then((res) => {
         this.state = res.status;
-        if (this.state == 200) {
-          setTimeout(() => {
-            location.replace("clubber://a");
-          }, 1000);
-        }
       })
       .catch((error) => {
         if (error) {
@@ -73,8 +65,8 @@ export default {
 
 <style scoped>
 .loading {
-  border: 10px solid #f3f3f3; /* Light grey */
-  border-top: 10px solid #ea0053; /* Blue */
+  border: 10px solid #f3f3f3; 
+  border-top: 10px solid #ea0053;
   border-radius: 50%;
   width: 60px;
   height: 60px;

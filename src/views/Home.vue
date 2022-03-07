@@ -11,10 +11,6 @@ export default {
   components: {
     Content,
   },
-  mounted() {
-    setTimeout(() => {
-      window.open('clubber://a');;
-    }, 1000);
-  },
+  mounted() {},
 };
 </script>

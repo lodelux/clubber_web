@@ -58,7 +58,7 @@ export default {
         this.state = res.status;
         if (this.state == 200) {
           setTimeout(() => {
-            location.replace("mailto:test@mail.com");
+            location.replace("https://clubber.page.link");
           }, 1000);
         }
       })

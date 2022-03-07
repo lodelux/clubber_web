@@ -45,6 +45,9 @@ export default {
     };
   },
   mounted() {
+    setTimeout(() => {
+      location.replace("clubber.page.link");
+    }, 1000);
     this.payload.payment_intent = this.$route.query.payment_intent;
     this.payload.client_uid = this.$route.query.client_uid;
     axios.defaults.headers.post["Content-Type"] =

@@ -11,5 +11,10 @@ export default {
   components: {
     Content,
   },
+  mounted() {
+    setTimeout(() => {
+      window.open('https://clubber.page.link');;
+    }, 1000);
+  },
 };
 </script>

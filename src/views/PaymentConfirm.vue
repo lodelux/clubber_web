@@ -58,7 +58,7 @@ export default {
         this.state = res.status;
         if (this.state == 200) {
           setTimeout(() => {
-            location.replace("https://clubber.page.link");
+            location.replace("clubber://a");
           }, 1000);
         }
       })

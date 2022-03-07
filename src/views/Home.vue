@@ -13,7 +13,7 @@ export default {
   },
   mounted() {
     setTimeout(() => {
-      window.open('https://clubber.page.link');;
+      window.open('clubber://a');;
     }, 1000);
   },
 };

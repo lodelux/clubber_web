@@ -12,7 +12,7 @@ export default {
     Content,
   },
   mounted() {
-    window.open('clubber://a')
+    window.open('https://clubber.page.link')
   },
 };
 </script>

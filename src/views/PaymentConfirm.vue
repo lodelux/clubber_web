@@ -16,7 +16,7 @@
         Attesa conferma pagamento
       </h3>
       <h3 v-if="this.state == 200">
-        Transazione confermata, puoi tornare all' app
+        Transazione confermata, <a href="https://clubber.page.link">clicca qui per tornare all' app</a>
       </h3>
       <h3 v-if="this.state != 200 && this.state != 'loading'">
         Si è verificato un errore durante il tentativo di pagamento
@@ -64,6 +64,10 @@ export default {
 </script>
 
 <style scoped>
+a {
+  @apply underline font-bold;
+  color: #ea0053;
+}
 .loading {
   border: 10px solid #f3f3f3; 
   border-top: 10px solid #ea0053;

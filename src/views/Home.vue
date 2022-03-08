@@ -11,8 +11,5 @@ export default {
   components: {
     Content,
   },
-  mounted() {
-    window.open('https://clubber.page.link')
-  },
 };
 </script>

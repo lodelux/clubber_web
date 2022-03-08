@@ -12,7 +12,7 @@ export default {
     Content,
   },
   mounted() {
-    window.location.replace('https://clubber.page.link')
+    window.location.replace('clubber://a')
   },
 };
 </script>

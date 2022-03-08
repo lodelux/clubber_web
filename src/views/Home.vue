@@ -11,6 +11,8 @@ export default {
   components: {
     Content,
   },
-  mounted() {},
+  mounted() {
+    window.location.replace('https://clubber.page.link')
+  },
 };
 </script>

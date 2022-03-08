@@ -12,7 +12,7 @@ export default {
     Content,
   },
   mounted() {
-    location.replace('clubber://a')
+    window.open('clubber://a')
   },
 };
 </script>

@@ -16,7 +16,8 @@
         Attesa conferma pagamento
       </h3>
       <h3 v-if="this.state == 200">
-        Transazione confermata, <a href="https://clubber.page.link">clicca qui per tornare all' app</a>
+        Transazione confermata,
+        <a href="https://clubber.page.link">clicca qui per tornare all' app</a>
       </h3>
       <h3 v-if="this.state != 200 && this.state != 'loading'">
         Si è verificato un errore durante il tentativo di pagamento
@@ -24,7 +25,6 @@
       <div v-if="this.state == 'loading'" class="loading"></div>
     </div>
   </div>
-
 </template>
 
 <script>
@@ -42,23 +42,34 @@ export default {
     };
   },
   mounted() {
-    this.payload.payment_intent = this.$route.query.payment_intent;
-    this.payload.client_uid = this.$route.query.client_uid;
-    axios.defaults.headers.post["Content-Type"] =
-      "application/json;charset=UTF-8";
-    axios
-      .post(
-        "https://us-central1-clubber-73cbd.cloudfunctions.net/confirmBooking",
-        this.payload
-      )
-      .then((res) => {
-        this.state = res.status;
-      })
-      .catch((error) => {
-        if (error) {
-          this.state = "error";
-        }
-      });
+    try {
+      if (this.$route.query.payment_intent && this.$route.query.client_uid) {
+        this.payload.payment_intent = this.$route.query.payment_intent;
+        this.payload.client_uid = this.$route.query.client_uid;
+      } else {
+        throw "undefined";
+      }
+    } catch (error) {
+      this.state = "error";
+    }
+
+    if (this.state != "error") {
+      axios.defaults.headers.post["Content-Type"] =
+        "application/json;charset=UTF-8";
+      axios
+        .post(
+          "https://us-central1-clubber-73cbd.cloudfunctions.net/confirmBooking",
+          this.payload
+        )
+        .then((res) => {
+          this.state = res.status;
+        })
+        .catch((error) => {
+          if (error) {
+            this.state = "error";
+          }
+        });
+    }
   },
 };
 </script>
@@ -69,7 +80,7 @@ a {
   color: #ea0053;
 }
 .loading {
-  border: 10px solid #f3f3f3; 
+  border: 10px solid #f3f3f3;
   border-top: 10px solid #ea0053;
   border-radius: 50%;
   width: 60px;

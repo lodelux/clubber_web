@@ -32,6 +32,13 @@ const routes = [
       import(/* webpackChunkName: "about" */ "../views/PaymentConfirm.vue"),
   },
   {
+    path: "/instagram_auth",
+    name: "InstagramAuth",
+    component: () =>
+    import(/* webpackChunkName: "about" */ "../views/InstagramAuth.vue"),
+
+  },
+  {
     path: "/:catchAll(.*)",
     redirect: { name: "Home" },
   },

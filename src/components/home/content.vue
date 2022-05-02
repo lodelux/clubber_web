@@ -30,8 +30,7 @@
 
   <div class="hero">
     <p class="info">
-      "Prenotare una serata in discoteca diventa semplice. Addio sbatti di
-      cercare un PR, ciao bello non hai capito che figata di app che siamo"
+      "Finalmente la discoteca diventa semplice. Per questo nasce Clubber, l'unica app di cui hai bisogno per divertirti nei locali senza pensieri."
     </p>
     <router-link :to="{ name: 'About' }">
       <button class="us">Chi Siamo</button>

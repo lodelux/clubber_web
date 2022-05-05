@@ -12,12 +12,15 @@
       "
     >
       <text-logo color="black" />
-      <h3 class="text-center px-4 pb-12">
+      <h3 class="text-center px-4 pb-12" v-if="payload.status == 200">
         Accesso completato
         <br />
         <br />
         clicca il bottone per tornare all' app e completare la sincronizzazione
         dei dati
+      </h3>
+      <h3 class="text-center px-4 pb-12" v-if="payload.status == 400">
+        Errore nell' accesso, clicca il bottone per tornare all' app
       </h3>
       <a
         :href="

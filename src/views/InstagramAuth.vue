@@ -24,10 +24,7 @@
       </h3>
       <a
         :href="
-          'https://clubber.page.link/instagram_auth?code=' +
-          payload._code +
-          '&status=' +
-          String(payload.status)
+          'https://clubber.page.link/?link=https%3A%2F%2Fclubberpeople.com%2Finstagram_auth%3Fcode%3D' + payload._code + '&apn=com.pbsoftware.clubber&amv=1&ibi=com.clubberapp.clubber&isi=1582459758&imv=2'
         "
         ><button>Torna all' App</button>
       </a>

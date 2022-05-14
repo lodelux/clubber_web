@@ -9,7 +9,13 @@
         come faresti quando cerchi il tuo PR di fiducia, ma con un solo tap
       </h3>
     </div>
-    <Nights></Nights>
+    <div class="h-80 flex space-x-5 items-center px-5 overflow-scroll">
+      <night-card
+        v-for="night in nights"
+        :key="night.id"
+        :_night="night"
+      ></night-card>
+    </div>
     <div class="sep2">
       <h1>Solita biglietteria online? No grazie</h1>
       <h2>Non pagare in anticipo per andare a ballare</h2>
@@ -56,14 +62,19 @@ h2 {
 <script>
 import { defineComponent } from "@vue/runtime-core";
 import Splash from "../components/home/splash.vue";
-import Nights from "../components/home/nights.vue";
+import NightCard from "../components/home/nightCard.vue";
 import Clubs from "../components/home/clubs.vue";
 export default defineComponent({
   name: "Home",
   components: {
     Splash,
-    Nights,
+    NightCard,
     Clubs,
+  },
+  computed: {
+    nights() {
+      return this.$store.state.nights;
+    },
   },
 });
 </script>

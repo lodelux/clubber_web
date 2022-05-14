@@ -20,6 +20,9 @@ export default defineComponent({
       return this.$route.name;
     },
   },
+  mounted() {
+    this.$store.dispatch("addNights", [{ id: 1, name: "test" },{ id: 1, name: "test" },{ id: 1, name: "test" },{ id: 1, name: "test" },{ id: 1, name: "test" },{ id: 1, name: "test" },{ id: 1, name: "test" },{ id: 1, name: "test" },]);
+  },
 });
 </script>
 

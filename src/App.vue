@@ -8,7 +8,8 @@
 <script>
 import Navbar from "@/components/navbar.vue";
 import Foot from "@/components/Foot.vue";
-export default {
+import { defineComponent } from "vue";
+export default defineComponent({
   name: "Home",
   components: {
     Foot,
@@ -19,7 +20,7 @@ export default {
       return this.$route.name;
     },
   },
-};
+});
 </script>
 
 <style>

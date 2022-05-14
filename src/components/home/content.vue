@@ -4,8 +4,6 @@
     <transition name="fade-in" appear>
       <div class="splash relative">
         <text-logo />
-        <!-- <div class="caption">Alla pubblicazione</div>
-        <Timer :toDate="this.toDate"></Timer> -->
       </div>
     </transition>
   </div>
@@ -30,7 +28,8 @@
 
   <div class="hero">
     <p class="info">
-      "Finalmente la discoteca diventa semplice. Per questo nasce Clubber, l'unica app di cui hai bisogno per divertirti nei locali senza pensieri."
+      "Finalmente la discoteca diventa semplice. Per questo nasce Clubber,
+      l'unica app di cui hai bisogno per divertirti nei locali senza pensieri."
     </p>
     <router-link :to="{ name: 'About' }">
       <button class="us">Chi Siamo</button>
@@ -40,8 +39,9 @@
 
 <script>
 import Card from "@/components/home/card.vue";
+import { defineComponent } from "@vue/runtime-core";
 import TextLogo from "../textLogo.vue";
-export default {
+export default defineComponent({
   components: {
     Card,
     TextLogo,
@@ -74,7 +74,7 @@ export default {
       ],
     };
   },
-};
+});
 </script>
 
 <style scoped>

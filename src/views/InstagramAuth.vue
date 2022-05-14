@@ -24,7 +24,9 @@
       </h3>
       <a
         :href="
-          'https://clubber.page.link/?link=https%3A%2F%2Fclubberpeople.com%2Finstagram_auth%3Fcode%3D' + payload._code + '&apn=com.pbsoftware.clubber&amv=1&ibi=com.clubberapp.clubber&isi=1582459758&imv=2'
+          'https://clubber.page.link/?link=https%3A%2F%2Fclubberpeople.com%2Finstagram_auth%3Fcode%3D' +
+          payload._code +
+          '&apn=com.pbsoftware.clubber&amv=1&ibi=com.clubberapp.clubber&isi=1582459758&imv=2'
         "
         ><button>Torna all' App</button>
       </a>
@@ -33,8 +35,9 @@
 </template>
 
 <script>
+import { defineComponent } from "@vue/runtime-core";
 import textLogo from "../components/textLogo.vue";
-export default {
+export default defineComponent({
   components: { textLogo },
   data() {
     return {
@@ -57,7 +60,7 @@ export default {
       this.payload.status = 400;
     }
   },
-};
+});
 </script>
 
 <style scoped>

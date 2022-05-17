@@ -9,12 +9,12 @@
         come faresti quando cerchi il tuo PR di fiducia, ma con un solo tap
       </h3>
     </div>
-    <div class="h-80 flex space-x-5 items-center px-5 overflow-scroll">
-      <night-card
+    <div class="cardsContainer">
+      <cover-card
         v-for="night in nights"
         :key="night.id"
-        :_night="night"
-      ></night-card>
+        :data="night"
+      ></cover-card>
     </div>
     <div class="sep2">
       <h1>Solita biglietteria online? No grazie</h1>
@@ -25,11 +25,21 @@
       </h3>
       <button>cacca</button>
     </div>
-    <Clubs></Clubs>
+    <div class="cardsContainer">
+      <cover-card
+        v-for="club in clubs"
+        :key="club.id"
+        :data="club"
+      ></cover-card>
+    </div>
   </div>
 </template>
 
 <style scoped>
+.cardsContainer {
+  @apply py-12 flex space-x-8 items-center px-8 overflow-scroll;
+}
+
 button {
   @apply py-3 px-10 mb-6;
   border-radius: 10px;
@@ -62,18 +72,19 @@ h2 {
 <script>
 import { defineComponent } from "@vue/runtime-core";
 import Splash from "../components/home/splash.vue";
-import NightCard from "../components/home/nightCard.vue";
-import Clubs from "../components/home/clubs.vue";
+import CoverCard from "../components/home/coverCard.vue";
 export default defineComponent({
   name: "Home",
   components: {
     Splash,
-    NightCard,
-    Clubs,
+    CoverCard,
   },
   computed: {
     nights() {
       return this.$store.state.nights;
+    },
+    clubs() {
+      return this.$store.state.clubs;
     },
   },
 });

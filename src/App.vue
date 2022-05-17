@@ -1,6 +1,5 @@
 <template>
   <Navbar />
-  {{ this.$router.route }}
   <router-view />
   <Foot v-if="pos != 'Contacts'" />
 </template>
@@ -9,6 +8,7 @@
 import Navbar from "@/components/navbar.vue";
 import Foot from "@/components/Foot.vue";
 import { defineComponent } from "vue";
+import axios from "axios";
 export default defineComponent({
   name: "Home",
   components: {
@@ -21,7 +21,30 @@ export default defineComponent({
     },
   },
   mounted() {
-    this.$store.dispatch("addNights", [{ id: 1, name: "test" },{ id: 1, name: "test" },{ id: 1, name: "test" },{ id: 1, name: "test" },{ id: 1, name: "test" },{ id: 1, name: "test" },{ id: 1, name: "test" },{ id: 1, name: "test" },]);
+    this.getClubs();
+    this.getNights();
+  },
+  methods: {
+    getClubs: async function () {
+      try {
+        let response = await axios.get(this.$store.state.CLUB_API);
+        if (response.status == 200 && response.data) {
+          this.$store.dispatch("addClubs", response.data);
+        }
+      } catch {
+        null;
+      }
+    },
+    getNights: async function () {
+      try {
+        let response = await axios.get(this.$store.state.NIGHT_API);
+        if (response.status == 200 && response.data) {
+          this.$store.dispatch("addNights", response.data);
+        }
+      } catch {
+        null;
+      }
+    },
   },
 });
 </script>

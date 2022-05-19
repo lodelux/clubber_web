@@ -14,6 +14,7 @@
         v-for="night in nights"
         :key="night.id"
         :data="night"
+        :position="'Home'"
       ></cover-card>
     </div>
     <div class="sep2">
@@ -30,6 +31,7 @@
         v-for="club in clubs"
         :key="club.id"
         :data="club"
+        :position="'Home'"
       ></cover-card>
     </div>
   </div>
@@ -72,7 +74,7 @@ h2 {
 <script>
 import { defineComponent } from "@vue/runtime-core";
 import Splash from "../components/home/splash.vue";
-import CoverCard from "../components/home/coverCard.vue";
+import CoverCard from "../components/coverCard.vue";
 export default defineComponent({
   name: "Home",
   components: {

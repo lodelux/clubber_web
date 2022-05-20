@@ -20,6 +20,11 @@ export default createStore({
       for (let night of _nights) {
         night.type = "night";
         commit("PUSH_STATE", { key: "nights", value: night });
+        commit("PUSH_STATE", { key: "nights", value: night });
+        commit("PUSH_STATE", { key: "nights", value: night });
+        commit("PUSH_STATE", { key: "nights", value: night });
+        commit("PUSH_STATE", { key: "nights", value: night });
+
       }
     },
     addClubs({ commit }, _clubs) {
@@ -27,25 +32,6 @@ export default createStore({
         club.type = "club";
         commit("PUSH_STATE", { key: "clubs", value: club });
       }
-    },
-  },
-  getters: {
-    getNight(state, id) {
-      console.log(id);
-      for (let night of state.nights) {
-        if (night.id == id) {
-          return night;
-        }
-      }
-      return undefined;
-    },
-    getClub(state, id) {
-      for (let club of state.clubs) {
-        if (club.id == id) {
-          return club;
-        }
-      }
-      return undefined;
     },
   },
   modules: {},

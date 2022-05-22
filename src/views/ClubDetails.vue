@@ -11,7 +11,7 @@
   <img class="w-full" :src="club.cover_link[0]" />
   <h3 class="py-12 px-6">{{ club.description }}</h3>
   <div class="nextNights flex-col px-6 py-8 space-y-8 overflow-auto">
-    <p class=" left-1  sticky">Prossime Serate a {{ club.name }}</p>
+    <p class=" left-1 sticky">Prossime Serate a {{ club.name }}</p>
     <div class="flex content-center justify-start space-x-8 px-4 ">
       <cover-card
         v-for="night in nightsOfClub"

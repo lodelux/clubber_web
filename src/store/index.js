@@ -20,15 +20,11 @@ export default createStore({
       for (let night of _nights) {
         night.type = "night";
         commit("PUSH_STATE", { key: "nights", value: night });
-        commit("PUSH_STATE", { key: "nights", value: night });
-        commit("PUSH_STATE", { key: "nights", value: night });
-        commit("PUSH_STATE", { key: "nights", value: night });
-        commit("PUSH_STATE", { key: "nights", value: night });
-
       }
     },
     addClubs({ commit }, _clubs) {
       for (let club of _clubs) {
+
         club.type = "club";
         commit("PUSH_STATE", { key: "clubs", value: club });
       }

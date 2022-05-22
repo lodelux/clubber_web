@@ -24,7 +24,7 @@
         Oltre al pagamento online, con Clubber potrai metterti in lista, proprio
         come faresti quando cerchi il tuo PR di fiducia, ma con un solo tap
       </h3>
-      <button>cacca</button>
+      <base-button class="py-3 px-10 mb-6" :bg="'white'">Cacca</base-button>
     </div>
     <div class="cardsContainer">
       <cover-card
@@ -42,16 +42,6 @@
   @apply py-12 flex space-x-8 items-center px-8 overflow-scroll;
 }
 
-button {
-  @apply py-3 px-10 mb-6;
-  border-radius: 10px;
-  background: #ffffff 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 6px #00000029;
-  opacity: 1;
-  font: normal normal bold 1rem Nunito;
-  color: #ea0053;
-  opacity: 1;
-}
 
 h3 {
   font: normal normal normal 0.7rem Nunito;
@@ -75,11 +65,13 @@ h2 {
 import { defineComponent } from "@vue/runtime-core";
 import Splash from "../components/home/splash.vue";
 import CoverCard from "../components/coverCard.vue";
+import BaseButton from "../components/BaseButton.vue";
 export default defineComponent({
   name: "Home",
   components: {
     Splash,
     CoverCard,
+    BaseButton,
   },
   computed: {
     nights() {

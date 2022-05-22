@@ -15,9 +15,7 @@
     <h2>Descrizione</h2>
     <br />
     <p>{{ night.description }}</p>
-    <base-button
-      class="px-2 py-4 w-full h-full mt-4 bottom-5 sticky"
-      :bg="'red'"
+    <a
       :href="
         'https://clubber.page.link/?link=https%3A%2F%2Fclubberpeople.com%2Fevents%3Fhost%3D' +
         night.host +
@@ -25,8 +23,13 @@
         night.id +
         '&apn=com.pbsoftware.clubber&amv=1&ibi=com.clubberapp.clubber&isi=1582459758&imv=2'
       "
-      >Prenota Ora</base-button
     >
+      <base-button
+        class="px-2 py-4 w-full h-full mt-4 bottom-5 sticky"
+        :bg="'red'"
+        >Prenota Ora</base-button
+      >
+    </a>
   </div>
 </template>
 

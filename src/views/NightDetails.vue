@@ -3,7 +3,16 @@
     <div class="w-full flex space-x-3 justify-center pb-8">
       <div class="flex-grow flex-col text-left justify-start space-y-3">
         <h1>{{ night.name }}</h1>
-        <h2>{{ clubOfNight.name }} - {{ clubOfNight.address }}</h2>
+        <h2>
+          <p
+            @click="this.$router.push(`/club/${clubOfNight.id}`)"
+            class="underline cursor-pointer"
+          > 
+            {{ clubOfNight.name }}
+          </p>
+          - {{ clubOfNight.address }}
+        </h2>
+
         <h3>{{ time }}</h3>
       </div>
       <cover-card :data="night" :position="'Details'"></cover-card>
@@ -83,7 +92,6 @@ h1 {
   color: #06001e;
 }
 h2 {
-  @apply underline;
   font: normal normal 600 1rem/1.25rem Nunito;
   color: #06001e;
 }

@@ -8,8 +8,10 @@
       </div>
       <cover-card :data="night" :position="'Details'"></cover-card>
     </div>
-    <div class="flex start space-x-5 pb-9 wrap">
-      <div class="tag" v-for="tag in night.tags" :key="tag">{{ tag }}</div>
+    <div class="flex pb-9 justify-start flex-wrap">
+      <div class="tag" v-for="tag in tags" :key="tag">
+        {{ tag }}
+      </div>
     </div>
     <!-- add dj div -->
     <h2>Descrizione</h2>
@@ -50,6 +52,9 @@ export default {
       }
       return "error";
     },
+    tags() {
+      return this.night.tags.filter((tag) => tag);
+    },
     time() {
       return new Date(this.night.date.start).toLocaleDateString("it-IT", {
         weekday: "long",
@@ -63,7 +68,7 @@ export default {
 
 <style scoped>
 .tag {
-  @apply text-white px-4 py-2 flex content-center items-center text-center;
+  @apply text-white px-4 py-2 flex content-center items-center text-center mx-1 my-2;
   background: #06001e 0% 0% no-repeat padding-box;
   border-radius: 18px;
   text-transform: capitalize;

@@ -3,7 +3,7 @@
     <div class="w-full flex space-x-3 justify-center pb-8">
       <div class="flex-grow flex-col text-left justify-start space-y-3">
         <h1>{{ night.name }}</h1>
-        <h2>{{ night.name }}</h2>
+        <h2>{{ clubOfNight.name }} - {{ clubOfNight.address }}</h2>
         <h3>{{ time }}</h3>
       </div>
       <cover-card :data="night" :position="'Details'"></cover-card>
@@ -55,6 +55,11 @@ export default {
     tags() {
       return this.night.tags.filter((tag) => tag);
     },
+    clubOfNight() {
+      return this.$store.state.clubs.filter(
+        (club) => club.id == this.night.host
+      )[0];
+    },
     time() {
       return new Date(this.night.date.start).toLocaleDateString("it-IT", {
         weekday: "long",
@@ -78,6 +83,7 @@ h1 {
   color: #06001e;
 }
 h2 {
+  @apply underline;
   font: normal normal 600 1rem/1.25rem Nunito;
   color: #06001e;
 }

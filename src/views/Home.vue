@@ -24,7 +24,12 @@
         Oltre al pagamento online, con Clubber potrai metterti in lista, proprio
         come faresti quando cerchi il tuo PR di fiducia, ma con un solo tap
       </h3>
-      <base-button class="py-3 px-10 mb-6" :bg="'white'">Cacca</base-button>
+      <base-button
+        @click="this.$router.push('/about')"
+        class="py-3 px-10 mb-6 cursor-pointer"
+        :bg="'white'"
+        >Scopri</base-button
+      >
     </div>
     <div class="cardsContainer">
       <cover-card
@@ -41,7 +46,6 @@
 .cardsContainer {
   @apply py-12 flex space-x-8 items-center px-8 overflow-scroll;
 }
-
 
 h3 {
   font: normal normal normal 0.7rem Nunito;

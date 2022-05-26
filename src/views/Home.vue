@@ -9,7 +9,15 @@
         come faresti quando cerchi il tuo PR di fiducia, ma con un solo tap
       </h3>
     </div>
-    <div class="cardsContainer">
+    <div class="cardsContainer" v-if="!nights[0]">
+      <cover-card
+        v-for="i in 5"
+        :key="i"
+        :data="{ isDummy: 1, type: 'night' }"
+        :position="'Home'"
+      ></cover-card>
+    </div>
+    <div v-if="nights[0]" class="cardsContainer">
       <cover-card
         v-for="night in nights"
         :key="night.id"
@@ -31,7 +39,16 @@
         >Scopri</base-button
       >
     </div>
-    <div class="cardsContainer">
+    <div class="cardsContainer" v-if="!clubs[0]">
+      <cover-card
+        v-for="i in 5"
+        :key="i"
+        :data="{ isDummy: 1, type: 'club' }"
+        :position="'Home'"
+      ></cover-card>
+    </div>
+
+    <div class="cardsContainer" v-if="clubs[0]">
       <cover-card
         v-for="club in clubs"
         :key="club.id"

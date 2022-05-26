@@ -1,14 +1,45 @@
 <template>
   <div
+    v-if="isMobile"
     @click="
-      position == 'Home' ? this.$router.push(`/${data.type}/${data.id}`) : ''
+      position == 'Home' && data.id != undefined
+        ? this.$router.push(`/${data.type}/${data.id}`)
+        : ''
     "
     class="flex-shrink-0 flex-col space-y-2"
     :class="position == 'Home' ? 'cursor-pointer' : ''"
   >
+    <div
+      class=" flex-shrink"
+      v-if="data.isDummy"
+      :class="data.type == 'night' ? 'night' + position : 'club' + position"
+    ></div>
     <img
+      v-if="data.id != undefined"
       :src="data.cover_link[0]"
       :class="data.type == 'night' ? 'night' + position : 'club' + position"
+    />
+    <h1 v-if="data.type == 'club'" class="text-center">{{ data.name }}</h1>
+  </div>
+  <div
+    v-if="!isMobile"
+    @click="
+      position == 'Home' && data.id != undefined
+        ? this.$router.push(`/${data.type}/${data.id}`)
+        : ''
+    "
+    class="flex-shrink-0 flex-col space-y-2"
+    :class="position == 'Home' ? 'cursor-pointer' : ''"
+  >
+    <div
+      class="w-full h-full"
+      v-if="data.isDummy"
+      :class="data.type == 'night' ? 'nightD' + position : 'clubD' + position"
+    ></div>
+    <img
+      v-if="data.id != undefined"
+      :src="data.cover_link[0]"
+      :class="data.type == 'night' ? 'nightD' + position : 'clubD' + position"
     />
     <h1 v-if="data.type == 'club'" class="text-center">{{ data.name }}</h1>
   </div>
@@ -17,6 +48,11 @@
 <script>
 export default {
   props: ["data", "position"],
+  computed: {
+    isMobile() {
+      return this.$store.state.isMobile;
+    },
+  },
 };
 </script>
 
@@ -26,7 +62,7 @@ export default {
 }
 
 .clubHome {
-  @apply w-56 h-44 flex-shrink-0 rounded-lg shadow-xl object-cover;
+  @apply w-56 h-44  flex-shrink-0 rounded-lg shadow-xl object-cover;
 }
 
 .nightDetails {
@@ -35,5 +71,24 @@ export default {
 
 .clubDetails {
   @apply w-56 h-44 flex-shrink-0 rounded-lg shadow-xl object-cover;
+}
+
+.nightDHome {
+  @apply flex-shrink-0 rounded-lg shadow-xl object-cover;
+}
+
+.clubDHome {
+  @apply flex-shrink-0 rounded-lg shadow-xl object-cover;
+}
+
+.nightDDetails {
+  @apply flex-shrink-0 rounded-lg shadow-xl object-cover;
+  
+  width: 25rem;
+  height : 31rem;
+}
+
+.clubDDetails {
+  @apply flex-shrink-0 rounded-lg shadow-xl object-cover;
 }
 </style>

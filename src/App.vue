@@ -21,6 +21,7 @@ export default defineComponent({
     },
   },
   mounted() {
+    this.$store.dispatch("setIsMobile");
     this.getClubs();
     this.getNights();
   },

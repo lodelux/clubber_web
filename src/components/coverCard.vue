@@ -28,7 +28,7 @@
         ? this.$router.push(`/${data.type}/${data.id}`)
         : ''
     "
-    class="flex-shrink-0 flex-col space-y-2"
+    class="flex-shrink flex-col space-y-2"
     :class="position == 'Home' ? 'cursor-pointer' : ''"
   >
     <div

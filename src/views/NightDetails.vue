@@ -43,8 +43,8 @@
     </a>
   </div>
   <div v-if="!isMobile">
-    <div class="flex space-x-6 px-16 py-7 lg:px-32 lg:py-14  content-center  w-screen">
-      <div class="flex-col text-left  space-y-2 w-1/2">
+    <div class="flex space-x-12 px-16 py-7 lg:px-32 lg:py-14 content-center justify-between">
+      <div class="flex-col flex-shrink w-1/2 text-left space-y-2">
         <h1>{{ night.name }}</h1>
         <h2>
           <span
@@ -73,7 +73,7 @@
           ></a
         >
       </div>
-      <div class="flex  justify-center content-center w-1/2">
+      <div class="flex justify-center content-center">
         <cover-card :data="night" :position="'Details'"></cover-card>
       </div>
     </div>

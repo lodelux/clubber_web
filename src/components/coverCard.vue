@@ -10,7 +10,7 @@
     :class="position == 'Home' ? 'cursor-pointer' : ''"
   >
     <div
-      class=" flex-shrink"
+      class="flex-shrink"
       v-if="data.isDummy"
       :class="data.type == 'night' ? 'night' + position : 'club' + position"
     ></div>
@@ -28,7 +28,7 @@
         ? this.$router.push(`/${data.type}/${data.id}`)
         : ''
     "
-    class="flex-shrink flex-col space-y-2"
+    class="flex-shrink-0 flex-col space-y-2"
     :class="position == 'Home' ? 'cursor-pointer' : ''"
   >
     <div
@@ -75,17 +75,22 @@ export default {
 
 .nightDHome {
   @apply flex-shrink-0 rounded-lg shadow-xl object-cover;
+  width: 25rem;
+  height: 31rem;
 }
 
 .clubDHome {
   @apply flex-shrink-0 rounded-lg shadow-xl object-cover;
+
+  width: 25rem;
+  height: 31rem;
 }
 
 .nightDDetails {
   @apply flex-shrink-0 rounded-lg shadow-xl object-cover;
-  
+
   width: 25rem;
-  height : 31rem;
+  height: 31rem;
 }
 
 .clubDDetails {

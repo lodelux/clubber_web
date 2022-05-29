@@ -62,7 +62,7 @@ export default {
 }
 
 .clubHome {
-  @apply w-56 h-44  flex-shrink-0 rounded-lg shadow-xl object-cover;
+  @apply w-64 h-48  flex-shrink-0 rounded-lg shadow-xl object-cover;
 }
 
 .nightDetails {
@@ -75,15 +75,15 @@ export default {
 
 .nightDHome {
   @apply flex-shrink-0 rounded-lg shadow-xl object-cover;
-  width: 25rem;
-  height: 31rem;
+  width: 15rem;
+  height: 20rem;
 }
 
 .clubDHome {
   @apply flex-shrink-0 rounded-lg shadow-xl object-cover;
 
-  width: 25rem;
-  height: 31rem;
+  width: 34rem;
+  height: 20rem;
 }
 
 .nightDDetails {

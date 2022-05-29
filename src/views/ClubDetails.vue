@@ -1,18 +1,41 @@
 <template>
-  <div class="flex w-full start py-9">
-    <div class="w-1/3 flex justify-center content-center px-2">
-      <img class="logo" :src="club.logo_link[0]" />
+  <div v-if="!isMobile" class="flex items-center">
+    <div class="flex-col w-1/2">
+      <div class="flex flex-row w-full start py-9">
+        <div class="w-1/3 flex justify-center content-center px-2">
+          <img class="logo" :src="club.logo_link[0]" />
+        </div>
+        <div class="w-2/3 flex-col justify-center space-y-3">
+          <h1>{{ club.name }}</h1>
+          <h2>{{ club.address }} - {{ club.city }}</h2>
+        </div>
+      </div>
+      <h3 v-if="!isMobile" class="py-12 px-6 flex-grow-0">
+        {{ club.description }}
+      </h3>
     </div>
-    <div class="w-2/3 flex-col justify-center space-y-3">
-      <h1>{{ club.name }}</h1>
-      <h2>{{ club.address }} - {{ club.city }}</h2>
+    <div class="flex justify-center content-center p-8 w-full h-96">
+      <img class="rounded-lg" :src="club.cover_link[0]" />
     </div>
   </div>
-  <img class="w-full" :src="club.cover_link[0]" />
-  <h3 class="py-12 px-6">{{ club.description }}</h3>
-  <div class="nextNights flex-col px-6 py-8 space-y-8 overflow-auto">
-    <p class=" left-1 sticky">Prossime Serate a {{ club.name }}</p>
-    <div class="flex content-center justify-start space-x-8 px-4 ">
+  <div v-if="isMobile">
+    <div class="flex w-full start py-9">
+      <div class="w-1/3 flex justify-center content-center px-2">
+        <img class="logo" :src="club.logo_link[0]" />
+      </div>
+      <div class="w-2/3 flex-col justify-center space-y-3">
+        <h1>{{ club.name }}</h1>
+        <h2>{{ club.address }} - {{ club.city }}</h2>
+      </div>
+    </div>
+    <img class="w-full" :src="club.cover_link[0]" />
+    <h3 class="py-12 px-6">{{ club.description }}</h3>
+  </div>
+  <div v-if="nightsOfClub[0]"  class="nextNights flex-col px-6 py-8 space-y-8 overflow-auto">
+    <p class="left-1 sticky">
+      Prossime Serate a {{ club.name }}
+    </p>
+    <div class="flex content-center justify-start space-x-8 px-4">
       <cover-card
         v-for="night in nightsOfClub"
         :key="night.id"
@@ -38,6 +61,9 @@ export default {
   components: { coverCard },
   name: "ClubDetails",
   computed: {
+    isMobile() {
+      return this.$store.state.isMobile;
+    },
     club() {
       let foundClub = this.$store.state.clubs.filter(
         (club) => club.id == this.$route.params.id

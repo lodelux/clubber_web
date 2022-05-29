@@ -62,7 +62,9 @@ export default {
 }
 
 .clubHome {
-  @apply w-64 h-48  flex-shrink-0 rounded-lg shadow-xl object-cover;
+  @apply  flex-shrink-0 rounded-lg shadow-xl object-cover;
+  width: 20rem;
+  height: 12rem;
 }
 
 .nightDetails {

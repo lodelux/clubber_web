@@ -1,6 +1,5 @@
 <template>
   <a
-    class=""
     v-if="device == 'android' || device == 'unrecognized'"
     href="https://play.google.com/store/apps/details?id=com.pbsoftware.clubber&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
     ><img
@@ -9,7 +8,7 @@
       style="width: 250px"
   /></a>
   <a
-    class=""
+
     v-if="device == 'iphone' || device == 'unrecognized'"
     href="https://apps.apple.com/it/app/clubber/id1582459758?itsct=apps_box_badge&amp;itscg=30200"
     style="border-radius: 13px; width: 250px; height: 83px"

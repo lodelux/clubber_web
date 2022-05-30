@@ -1,5 +1,5 @@
 <template>
-  <div v-if="isMobile" class="flex flex-col w-full py-10">
+  <div v-if="isMobile" class="flex flex-col w-full pt-10">
     <div class="w-full px-3 text-center flex-col space-y-4">
       <h1>Una sola missione</h1>
       <h2>Rendere la discoteca semplice.</h2>
@@ -15,7 +15,7 @@
         </div>
       </div>
     </div>
-    <img src="../../assets/Home_mobile.jpg" class="w-full" />
+    <img src="../../assets/Home_desktop.jpg" class="w-full" />
   </div>
 
   <div v-if="!isMobile" class="flex w-screen items-center">

@@ -25,7 +25,7 @@
         <app-button>Scarica L'app</app-button>
       </div>
     </div>
-    <img src="../assets/Chi_siamo_mobile.jpg" />
+    <img src="../assets/Chi_siamo_desktop.jpg" />
   </div>
   <div v-if="!isMobile" class="flex flex-row px-10">
     <div class="w-1/2">

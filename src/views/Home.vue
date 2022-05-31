@@ -3,7 +3,10 @@
     <Splash></Splash>
     <div class="sep1">
       <h1>Solita biglietteria online? No grazie</h1>
-      <h2>Con Clubber hai accesso a liste, prevendite e tavoli nei migliori locali della tua zona.</h2>
+      <h2>
+        Con Clubber hai accesso a liste, prevendite e tavoli nei migliori locali
+        della tua zona.
+      </h2>
     </div>
     <div class="cardsContainer" v-if="!nights[0]">
       <cover-card
@@ -25,14 +28,12 @@
       <h1>Più siamo, più sarà facile</h1>
       <h2>Aiutaci ad aiutare i clubbers di tutta Italia</h2>
       <h3>
-        Fai conoscere Clubber ai tuoi amici, parlane con loro, condividi! Più persone scaricheranno Clubber, più discoteche vorranno usarla e sarà più facile per tutti trovare la propria serata.
+        Fai conoscere Clubber ai tuoi amici, parlane con loro, condividi! Più
+        persone scaricheranno Clubber, più discoteche vorranno usarla e sarà più
+        facile per tutti trovare la propria serata.
       </h3>
-      <a
-        :href="'https://www.instagram.com/clubber_people/'"
-      >
-        <base-button
-          class="py-3 px-10 mb-6 cursor-pointer"
-          :bg="'white'"
+      <a href="https://www.instagram.com/clubber_people/">
+        <base-button class="py-3 px-10 mt-5 mb-5 cursor-pointer" :bg="'white'"
           >Spargi la voce!</base-button
         >
       </a>
@@ -59,7 +60,7 @@
 
 <style scoped>
 .cardsContainer {
-  @apply py-12 flex space-x-8 items-center px-8 overflow-scroll;
+  @apply py-12 flex space-x-8 items-center px-8 overflow-scroll overflow-y-hidden;
 }
 
 h3 {
@@ -76,7 +77,7 @@ h2 {
   background-color: #06001e;
 }
 .sep2 {
-  @apply text-center text-white  flex-col space-y-4 py-4 px-2;
+  @apply text-center text-white  flex-col space-y-4 py-4 px-8 lg:px-16;
   background-color: #ea0053;
 }
 </style>

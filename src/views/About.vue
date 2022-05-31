@@ -25,11 +25,15 @@
         <app-button>Scarica L'app</app-button>
       </div>
     </div>
-    <img src="../assets/Chi_siamo_desktop.jpg" />
+    <transition name="fade-in" appear>
+      <img src="../assets/Chi_siamo_desktop.jpg" />
+    </transition>
   </div>
   <div v-if="!isMobile" class="flex flex-row px-10">
     <div class="w-1/2">
-      <img src="../assets/Chi_siamo_desktop.jpg" />
+      <transition name="fade-in" appear>
+        <img src="../assets/Chi_siamo_desktop.jpg" />
+      </transition>
     </div>
 
     <div class="px-6 pt-6 pb-15 flex-col space-y-6 w-1/2">
@@ -54,7 +58,7 @@
       </h2>
       <h2>La parola d’ordine è stata semplicità</h2>
       <div class="py-6 px-4 flex justify-center items-center">
-        <app-button class=" w-24">Scarica L'app</app-button>
+        <app-button class="w-24">Scarica L'app</app-button>
       </div>
     </div>
   </div>

@@ -14,8 +14,8 @@
         {{ club.description }}
       </h3>
     </div>
-    <div class="flex justify-center content-center p-8 w-full h-96">
-      <img class="rounded-lg" :src="club.cover_link[0]" />
+    <div class="flex justify-center content-center p-8 w-1/2 h-96">
+      <img class="rounded-lg shadow-lg object-cover w-full" :src="club.cover_link[0]" />
     </div>
   </div>
   <div v-if="isMobile">
@@ -95,7 +95,7 @@ p {
   background: #06001e;
 }
 .logo {
-  @apply rounded-full;
+  @apply rounded-full shadow-lg;
   width: 4.5rem;
   height: 4.5rem;
 }

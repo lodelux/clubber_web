@@ -26,11 +26,10 @@
       ></cover-card>
     </div>
     <div class="sep2">
-      <h1>Solita biglietteria online? No grazie</h1>
-      <h2>Non pagare in anticipo per andare a ballare</h2>
+      <h1>Più siamo, più sarà facile</h1>
+      <h2>Aiutaci ad aiutare i clubbers di tutta Italia</h2>
       <h3>
-        Oltre al pagamento online, con Clubber potrai metterti in lista, proprio
-        come faresti quando cerchi il tuo PR di fiducia, ma con un solo tap
+        Fai conoscere Clubber ai tuoi amici, parlane con loro, condividi! Più persone scaricheranno Clubber, più discoteche vorranno usarla e sarà più facile per tutti trovare la propria serata.
       </h3>
       <base-button
         @click="this.$router.push('/about')"

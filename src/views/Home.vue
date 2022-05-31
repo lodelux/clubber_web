@@ -56,7 +56,7 @@
 
 <style scoped>
 .cardsContainer {
-  @apply py-12 flex space-x-8 items-center px-8 overflow-scroll mr-3;
+  @apply py-12 flex space-x-8 items-center px-8 overflow-scroll;
 }
 
 h3 {

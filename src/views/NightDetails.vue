@@ -66,7 +66,7 @@
         <p>{{ night.description }}</p>
         <a>
           <base-button
-            @click="this.$router.push('/about')"
+            @click="this.$router.push('/')"
             class="px-2 py-4 w-full mt-16"
             :bg="'red'"
             >Prenota Ora</base-button

@@ -35,7 +35,7 @@
         @click="this.$router.push('/about')"
         class="py-3 px-10 mb-6 cursor-pointer"
         :bg="'white'"
-        >Scopri</base-button
+        >Spargi la voce!</base-button
       >
     </div>
     <div class="cardsContainer" v-if="!clubs[0]">

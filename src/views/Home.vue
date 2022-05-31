@@ -27,12 +27,15 @@
       <h3>
         Fai conoscere Clubber ai tuoi amici, parlane con loro, condividi! Più persone scaricheranno Clubber, più discoteche vorranno usarla e sarà più facile per tutti trovare la propria serata.
       </h3>
-      <base-button
-        @click="this.$router.push('/about')"
-        class="py-3 px-10 mb-6 cursor-pointer"
-        :bg="'white'"
-        >Spargi la voce!</base-button
+      <a
+        :href="https://www.instagram.com/clubber_people/"
       >
+        <base-button
+          class="py-3 px-10 mb-6 cursor-pointer"
+          :bg="'red'"
+          >Spargi la voce!</base-button
+        >
+      </a>
     </div>
     <div class="cardsContainer" v-if="!clubs[0]">
       <cover-card

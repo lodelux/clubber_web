@@ -3,11 +3,7 @@
     <Splash></Splash>
     <div class="sep1">
       <h1>Solita biglietteria online? No grazie</h1>
-      <h2>Non pagare in anticipo per andare a ballare</h2>
-      <h3>
-        Oltre al pagamento online, con Clubber potrai metterti in lista, proprio
-        come faresti quando cerchi il tuo PR di fiducia, ma con un solo tap
-      </h3>
+      <h2>Con Clubber hai accesso a liste, prevendite e tavoli nei migliori locali della tua zona.</h2>
     </div>
     <div class="cardsContainer" v-if="!nights[0]">
       <cover-card

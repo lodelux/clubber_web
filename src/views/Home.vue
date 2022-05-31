@@ -3,11 +3,7 @@
     <Splash></Splash>
     <div class="sep1">
       <h1>Solita biglietteria online? No grazie</h1>
-      <h2>Non pagare in anticipo per andare a ballare</h2>
-      <h3>
-        Oltre al pagamento online, con Clubber potrai metterti in lista, proprio
-        come faresti quando cerchi il tuo PR di fiducia, ma con un solo tap
-      </h3>
+      <h2>Con Clubber hai accesso a liste, prevendite e tavoli nei migliori locali della tua zona.</h2>
     </div>
     <div class="cardsContainer" v-if="!nights[0]">
       <cover-card
@@ -26,17 +22,16 @@
       ></cover-card>
     </div>
     <div class="sep2">
-      <h1>Solita biglietteria online? No grazie</h1>
-      <h2>Non pagare in anticipo per andare a ballare</h2>
+      <h1>Più siamo, più sarà facile</h1>
+      <h2>Aiutaci ad aiutare i clubbers di tutta Italia</h2>
       <h3>
-        Oltre al pagamento online, con Clubber potrai metterti in lista, proprio
-        come faresti quando cerchi il tuo PR di fiducia, ma con un solo tap
+        Fai conoscere Clubber ai tuoi amici, parlane con loro, condividi! Più persone scaricheranno Clubber, più discoteche vorranno usarla e sarà più facile per tutti trovare la propria serata.
       </h3>
       <base-button
         @click="this.$router.push('/about')"
         class="py-3 px-10 mb-6 cursor-pointer"
         :bg="'white'"
-        >Scopri</base-button
+        >Spargi la voce!</base-button
       >
     </div>
     <div class="cardsContainer" v-if="!clubs[0]">

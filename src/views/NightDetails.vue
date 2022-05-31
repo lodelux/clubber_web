@@ -30,7 +30,7 @@
       :href="
         'https://clubber.page.link/?link=https%3A%2F%2Fclubberpeople.com%2Fevents%3Fhost%3D' +
         night.host +
-        '&event%3D' +
+        '%26event%3D' +
         night.id +
         '&apn=com.pbsoftware.clubber&amv=1&ibi=com.clubberapp.clubber&isi=1582459758&imv=2'
       "

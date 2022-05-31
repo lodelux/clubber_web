@@ -31,9 +31,7 @@
   </div>
   <div v-if="!isMobile" class="flex flex-row px-10">
     <div class="w-1/2">
-      <transition name="fade-in" appear>
         <img src="../assets/Chi_siamo_desktop.jpg" />
-      </transition>
     </div>
 
     <div class="px-6 pt-6 pb-15 flex-col space-y-6 w-1/2">

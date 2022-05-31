@@ -15,9 +15,7 @@
         </div>
       </div>
     </div>
-    <transition name="fade-in" appear>
       <img src="../../assets/Home_desktop.jpg" class="w-full"
-    /></transition>
   </div>
 
   <div v-if="!isMobile" class="flex items-center">

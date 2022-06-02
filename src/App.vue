@@ -1,6 +1,8 @@
 <template>
   <Navbar />
-  <router-view />
+  <div class="min-h-screen">
+    <router-view />
+  </div>
   <Foot v-if="pos != 'Contacts'" />
 </template>
 

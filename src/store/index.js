@@ -17,7 +17,6 @@ export default createStore({
     },
     SET_ISMOBILE(state, value) {
       state["isMobile"] = value;
-      console.log(state.isMobile);
     },
   },
   actions: {

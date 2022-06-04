@@ -41,7 +41,7 @@
         Durante il lockdown con la voglia di ballare e le discoteche chiuse
         pensavamo con nostalgia a tutte le serate che ci stavamo perdendo. Poi
         ci siamo ricordati di tutte le volte che siamo stati rimbalzati
-        all'ingresso e siamo rimasti fuori dal lovale al freddo e sentendoci
+        all'ingresso e siamo rimasti fuori dal locale al freddo e sentendoci
         degli idioti, per non parlare della paranoia di prenotare una serata
         quando vai in una nuova città, o quando non conosci nessuno che ti possa
         far entrare (o imbucare).

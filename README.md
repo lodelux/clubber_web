@@ -1,5 +1,8 @@
 # clubber_web
 
+
+live version at www.clubberpeople.com (backup link: https://clubberpeople.netlify.app/) 
+
 ## Project setup
 ```
 npm install
